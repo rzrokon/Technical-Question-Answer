@@ -1,0 +1,13 @@
+version: '3'
+services:
+  django:
+    build: ./django
+    image: mydjango
+    ports:
+      - "8000:8888"
+
+  flask:
+    build: ./flask
+    image: myflask
+    ports:
+      - "5000:5000"
